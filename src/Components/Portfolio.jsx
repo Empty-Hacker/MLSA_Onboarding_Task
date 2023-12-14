@@ -62,11 +62,17 @@ const Portfolio = () => {
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover", animation: "1s ease-out 0s 1 slideInLeft" }}
-            alt={imageAltText}
-          />
+        <img
+          src={image}
+          style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "slideInLeft 1s ease-out",
+          }}
+              alt={imageAltText}
+        />
+
         </div>
         <div className="container">
           {projectList.map((project) => (
